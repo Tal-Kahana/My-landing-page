@@ -208,7 +208,7 @@
     </div>
     <div class="contact-buttons">
       <a class="contact-btn btn-phone" href="tel:0523534555">📞 052-3534555</a>
-      <a class="contact-btn btn-email" href="https://mail.google.com/mail/?view=cm&amp;to=kahana.tal@gmail.com">✉️ kahana.tal@gmail.com</a>
+      <a class="contact-btn btn-email" id="emailBtn" href="https://mail.google.com/mail/?view=cm&amp;to=kahana.tal@gmail.com">✉️ kahana.tal@gmail.com</a>
       <a class="contact-btn btn-facebook" href="https://www.facebook.com/tal.kahana" target="_blank">📘 פייסבוק</a>
     </div>
   </div>
@@ -216,5 +216,10 @@
     <img class="logo" src="tal_kahana_logo2.png" alt="לוגו טל כהנא" />
   </div>
   <footer>נבנה עם Claude Code 💙</footer>
+  <script>
+    if (/Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)) {
+      document.getElementById('emailBtn').href = 'mailto:kahana.tal@gmail.com';
+    }
+  </script>
 </body>
 </html>
