@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>טל כהנא</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f6f2;
+      color: #2c2c2c;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1.2rem;
+    }
+
+    .container {
+      max-width: 800px;
+      width: 100%;
+      flex: 1;
+    }
+
+    .logo-wrapper {
+      width: 100%;
+      max-width: 800px;
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 2.5rem;
+    }
+
+    .logo {
+      max-height: 60px;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      color: #2d3436;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 2.5rem;
+      line-height: 1.6;
+    }
+
+    .services {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .service-card {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 1.4rem 1.6rem;
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.14);
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+
+    .service-card:hover {
+      box-shadow: 0 14px 38px rgba(0, 0, 0, 0.22);
+      transform: translateY(-2px);
+    }
+
+    .service-card:nth-child(1) {
+      border-right: 4px solid #2dc870;
+    }
+
+    .service-card:nth-child(2) {
+      border-right: 4px solid #e91e8c;
+    }
+
+    .service-card h2 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #2d3436;
+    }
+
+    .service-number {
+      display: inline-block;
+      color: white;
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      text-align: center;
+      line-height: 28px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-left: 0.7rem;
+    }
+
+    .service-card:nth-child(1) .service-number {
+      background: #2dc870;
+    }
+
+    .service-card:nth-child(2) .service-number {
+      background: #e91e8c;
+    }
+
+    .contact-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .contact-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.4rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: background-color 0.2s, transform 0.15s, box-shadow 0.2s;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    }
+
+    .contact-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.32);
+    }
+
+    .contact-btn:active {
+      transform: translateY(0);
+    }
+
+    .btn-phone {
+      background: #3a8fc9;
+      color: white;
+    }
+
+    .btn-phone:hover {
+      background: #2d7ab0;
+    }
+
+    .btn-email {
+      background: #2dc870;
+      color: white;
+    }
+
+    .btn-email:hover {
+      background: #24ac5e;
+    }
+
+    .btn-facebook {
+      background: #e91e8c;
+      color: white;
+    }
+
+    .btn-facebook:hover {
+      background: #cc1279;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      color: #999;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .subtitle {
+        font-size: 1rem;
+      }
+
+      .contact-buttons {
+        flex-direction: column;
+      }
+
+      .contact-btn {
+        justify-content: center;
+      }
+
+      .logo {
+        max-height: 70px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>שלום, אני טל כהנא</h1>
+    <p class="subtitle">אם אתם עמותה או ארגון חברתי, אשמח לתת לכם שירותים בתחומים הבאים:</p>
+    <div class="services">
+      <div class="service-card">
+        <h2><span class="service-number">1</span>בניית יכולות מדידה והערכה</h2>
+      </div>
+      <div class="service-card">
+        <h2><span class="service-number">2</span>ייעול תהליכים באמצעות פתרונות מבוססי אוטומציות ו-AI</h2>
+      </div>
+    </div>
+    <div class="contact-buttons">
+      <a class="contact-btn btn-phone" href="tel:0523534555">📞 052-3534555</a>
+      <a class="contact-btn btn-email" href="https://mail.google.com/mail/?view=cm&to=kahana.tal@gmail.com" target="_blank">✉️ kahana.tal@gmail.com</a>
+      <a class="contact-btn btn-facebook" href="https://www.facebook.com/tal.kahana" target="_blank">📘 פייסבוק</a>
+    </div>
+  </div>
+  <div class="logo-wrapper">
+    <img class="logo" src="tal_kahana_logo2.png" alt="לוגו טל כהנא" />
+  </div>
+  <footer>נבנה עם Claude Code 💙</footer>
+</body>
+</html>
